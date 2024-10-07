@@ -1,0 +1,3 @@
+export const LANGUAGE_ENGLISH = 'en';
+
+export const DEFAULT_LANGUAGE = LANGUAGE_ENGLISH;
