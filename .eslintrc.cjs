@@ -39,7 +39,7 @@ module.exports = {
           '**/*.spec.{ts,tsx}',
           '**/vite.config.ts',
           '**/vitest.config.ts',
-          '**/setup-tests.ts',
+          '**/testing/**/*',
         ],
       },
     ],
@@ -75,6 +75,7 @@ module.exports = {
         },
       },
     ],
+    'import/prefer-default-export': ['off'],
   },
   settings: {
     'import/resolver': {
