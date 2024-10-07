@@ -1,1 +1,1 @@
-pnpm vitest --no-watch
+pnpm run test --no-watch
