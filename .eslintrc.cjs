@@ -39,6 +39,7 @@ module.exports = {
           '**/*.spec.{ts,tsx}',
           '**/vite.config.ts',
           '**/vitest.config.ts',
+          '**/setup-tests.ts',
         ],
       },
     ],
