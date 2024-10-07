@@ -77,6 +77,14 @@ module.exports = {
     ],
     'import/prefer-default-export': ['off'],
   },
+  overrides: [
+    {
+      files: ['src/main.tsx'],
+      rules: {
+        '@typescript-eslint/no-non-null-assertion': 'off',
+      },
+    },
+  ],
   settings: {
     'import/resolver': {
       node: {
@@ -88,5 +96,9 @@ module.exports = {
       extensions: ['.js', '.jsx', '.ts', '.tsx'],
     },
   },
-  ignorePatterns: ['.eslintrc.cjs', '*.config'],
+  ignorePatterns: [
+    '.eslintrc.cjs',
+    '*.config.*',
+    '/src/components/ui/*', // This refers to the Shadcn's component folder
+  ],
 };
