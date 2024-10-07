@@ -10,8 +10,8 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint src --ext ts,tsx --fix",
     "preview": "vite preview",
-    "test": "vitest",
-    "test:ui": "vitest --ui",
+    "test": "vitest --passWithNoTests",
+    "test:ui": "vitest --ui --passWithNoTests",
     "prepare": "husky"
   },
   "dependencies": {
