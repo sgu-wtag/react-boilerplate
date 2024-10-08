@@ -10,6 +10,7 @@ module.exports = {
     'airbnb/hooks',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:@tanstack/eslint-plugin-query/recommended',
     'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
@@ -21,7 +22,7 @@ module.exports = {
     sourceType: 'module',
     project: ['./tsconfig.app.json', './tsconfig.node.json'],
   },
-  plugins: ['react', '@typescript-eslint', 'prettier'],
+  plugins: ['react', '@typescript-eslint', '@tanstack/query', 'prettier'],
   rules: {
     'import/extensions': 'off',
     'react/react-in-jsx-scope': 'off',
@@ -96,9 +97,5 @@ module.exports = {
       extensions: ['.js', '.jsx', '.ts', '.tsx'],
     },
   },
-  ignorePatterns: [
-    '.eslintrc.cjs',
-    '*.config.*',
-    '/src/components/ui/*', // This refers to the Shadcn's component folder
-  ],
+  ignorePatterns: ['.eslintrc.cjs', '*.config.*'],
 };
